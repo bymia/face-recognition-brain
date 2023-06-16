@@ -63,7 +63,11 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
+<<<<<<< HEAD
     fetch('https://mybackend-1gyp.onrender.com/imageurl', {
+=======
+    fetch('http://localhost:3000/imageurl', {
+>>>>>>> c1667edfdef61308c65313e7e9cccb4edeb0d960
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -73,7 +77,11 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
             if (response) {
+<<<<<<< HEAD
                 fetch('https://mybackend-1gyp.onrender.com/image', {
+=======
+                fetch('http://localhost:3000/image', {
+>>>>>>> c1667edfdef61308c65313e7e9cccb4edeb0d960
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({

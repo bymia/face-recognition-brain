@@ -18,11 +18,7 @@ class Signin extends React.Component {
     }
 
     onSubmitSignIn = () => {
-<<<<<<< HEAD
         fetch('https://mybackend-1gyp.onrender.com/signin', {
-=======
-        fetch('http://localhost:3000/signin', {
->>>>>>> c1667edfdef61308c65313e7e9cccb4edeb0d960
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

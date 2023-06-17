@@ -63,7 +63,6 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-
     fetch('https://mybackend-1gyp.onrender.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},

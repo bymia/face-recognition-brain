@@ -64,11 +64,7 @@ class App extends Component {
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
 
-<<<<<<< HEAD
     fetch('https://mybackend-1gyp.onrender.com/imageurl', {
-=======
-    fetch('https://smart-brain-api-d39g.onrender.com/imageurl', {
->>>>>>> 16a1b575640145827588437bcfbfdc37d7c6d323
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -78,11 +74,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
             if (response) {
-<<<<<<< HEAD
                 fetch('https://mybackend-1gyp.onrender.com/image', {
-=======
-                fetch('https://smart-brain-api-d39g.onrender.com/image', {
->>>>>>> 16a1b575640145827588437bcfbfdc37d7c6d323
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -134,7 +126,3 @@ class App extends Component {
 }
 
 export default App;
-<<<<<<< HEAD
-=======
-
->>>>>>> 16a1b575640145827588437bcfbfdc37d7c6d323

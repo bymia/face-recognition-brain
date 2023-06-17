@@ -79,8 +79,4 @@ class Signin extends React.Component {
   }  
 }
 
-<<<<<<< HEAD
 export default Signin;
-=======
-export default Signin;
->>>>>>> 16a1b575640145827588437bcfbfdc37d7c6d323

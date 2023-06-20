@@ -70,7 +70,7 @@ class App extends Component {
            id: this.state.input
         })
       })
-      .then(response => console.log(response.json()))
+      .then(response => response.json())
       .then(response => {
             if (response) {
                 fetch('https://mybackend-1gyp.onrender.com/image', {
@@ -86,6 +86,7 @@ class App extends Component {
                 })
                 .catch(console.log());
               }
+              console.log(response)
               this.displayFaceBox(this.calculateFaceLocation(response))
              })
              .catch(error => console.log('error', error));
